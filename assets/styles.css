@@ -1,11 +1,41 @@
-#sidebar {
+#header {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
     background-color: #ba3d20;
+    color: whitesmoke;
 }
 
 #main {
     background-color: whitesmoke;
+    padding: 5px;
+    width:100%;
+    height: 1500px;
+    text-align: center;
 }
 
-body {
-    height: 2000px;
+#profile {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+
+
+@media screen and (min-width: 850px) {
+    #header {
+        width:30%;
+        height: 100vh;
+        float: left;
+        position:fixed;
+    }
+
+    #main {
+        width:70%;
+        padding: 10px;
+        position: relative;
+        float: right;
+        text-align: left;
+    }
 }
