@@ -12,6 +12,7 @@ h2 {
     padding: 5px;
     background-color: #ba3d20;
     color: whitesmoke;
+
 }
 
 #main {
@@ -29,25 +30,10 @@ h2 {
     border-style: solid;
     border-width: 2px;
     border-color: rgb(186, 61, 32, 0.35);
+
+    overflow: hidden;
 }
 
-.project-block {
-    padding: 5px;
-    /* margin: 5px; */
-    margin-bottom: 10px;
-    background-color: aquamarine;
-
-    overflow: auto;
-
-}
-
-
-.project-img {
-    height: 150px;
-    width: 75%;
-    max-width: 375px;
-    margin-right: 3px;
-}
 
 #profile {
     border-radius: 50%;
@@ -56,6 +42,39 @@ h2 {
     margin: 20px;
 }
 
+
+.project-block {
+    border-style: solid;
+    border-color: green;
+    margin: 5px 0;
+
+    overflow: hidden;
+}
+
+.img-holder {
+    background-color: blue;
+    overflow: hidden;
+}
+
+.project-img {
+    width: 90%;
+    max-width: 400px;
+    max-height: 200px;
+    margin: 5px;
+}
+
+/* Social media icons */
+.fa {
+    padding: 5px;
+    font-size: 50px;
+    width: 50px;
+    text-decoration: none;
+    color:white;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
 
 /* Handler for when screen becomes wider than 850 --> Desktop/Large tablet size */
 @media screen and (min-width: 850px) {
@@ -74,14 +93,15 @@ h2 {
         text-align: left;
     }
 
-    .project-img {
+    .img-holder {
+        width: 30%;
         float: left;
-
-        height: 125px;
-        width: 250px;
+        height: 100%;
     }
 
-    .project-block {
-        text-align: left;
+    .project-text {
+        width: 70%;
+        float: right;
     }
+
 }
