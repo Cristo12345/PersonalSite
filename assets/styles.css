@@ -1,3 +1,11 @@
+body {
+    font-family: helvetica, sans-serif;
+}
+
+h2 {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
 #header {
     width: 100%;
     text-align: center;
@@ -14,6 +22,33 @@
     text-align: center;
 }
 
+.main-block {
+    padding: 5px;
+    margin: 5px 0;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(186, 61, 32, 0.35);
+}
+
+.project-block {
+    padding: 5px;
+    /* margin: 5px; */
+    margin-bottom: 10px;
+    background-color: aquamarine;
+
+    overflow: auto;
+
+}
+
+
+.project-img {
+    height: 150px;
+    width: 75%;
+    max-width: 375px;
+    margin-right: 3px;
+}
+
 #profile {
     border-radius: 50%;
     width: 200px;
@@ -22,7 +57,7 @@
 }
 
 
-
+/* Handler for when screen becomes wider than 850 --> Desktop/Large tablet size */
 @media screen and (min-width: 850px) {
     #header {
         width:30%;
@@ -36,6 +71,17 @@
         padding: 10px;
         position: relative;
         float: right;
+        text-align: left;
+    }
+
+    .project-img {
+        float: left;
+
+        height: 125px;
+        width: 250px;
+    }
+
+    .project-block {
         text-align: left;
     }
 }
