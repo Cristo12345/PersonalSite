@@ -42,6 +42,13 @@ h2 {
     margin: 20px;
 }
 
+#quickLinks {
+    display: inline-flex;
+}
+
+.quickLink {
+    margin: 5px;
+}
 
 .project-block {
     border-style: solid;
@@ -52,7 +59,7 @@ h2 {
 }
 
 .img-holder {
-    background-color: blue;
+    /* background-color: blue; */
     overflow: hidden;
 }
 
@@ -61,12 +68,17 @@ h2 {
     max-width: 400px;
     max-height: 200px;
     margin: 5px;
+    object-fit: cover;
+}
+
+.project-text {
+    padding-top: 10px;
 }
 
 /* Social media icons */
 .fa {
     padding: 5px;
-    font-size: 50px;
+    font-size: 25px;
     width: 50px;
     text-decoration: none;
     color:white;
@@ -93,15 +105,33 @@ h2 {
         text-align: left;
     }
 
+    #quickLinks {
+        display: block;
+    }
+    .project-block{
+        display:inline-flex;
+    }
     .img-holder {
-        width: 30%;
-        float: left;
-        height: 100%;
+         /* width: 30%; */
+        /* float: left; */
+        /* height: 100%;  */
+
     }
 
     .project-text {
+        /* min-width: 56%; */
         width: 70%;
         float: right;
     }
+
+    .project-img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .fa {
+        font-size: 50px;
+    }
+
 
 }
