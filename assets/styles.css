@@ -4,21 +4,33 @@ body {
 
 h2 {
     font-family: Verdana, Tahoma, sans-serif;
+    color: #ba3d20;
+    border-bottom: 2px solid rgb(186, 61, 32, 0.35);
+
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+li {
+    text-align: left;
 }
 
 #header {
     width: 100%;
     text-align: center;
     padding: 5px;
-    background-color: #ba3d20;
+    /* background-color: #ba3d20; */
     color: whitesmoke;
 
+    background: linear-gradient(0deg, rgb(186, 61, 32, 0.50), rgb(186, 61, 32, 0.50)), url(./images/hongKong.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #main {
     background-color: whitesmoke;
     padding: 5px;
-    width:100%;
+    width: 100%;
     height: 1500px;
     text-align: center;
 }
@@ -37,13 +49,14 @@ h2 {
 
 #profile {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     margin: 20px;
 }
 
 #quickLinks {
-    display: inline-flex;
+    margin: 30px 0;
+    display: none;
 }
 
 .quickLink {
@@ -52,8 +65,10 @@ h2 {
 
 .project-block {
     border-style: solid;
-    border-color: green;
+    border-color: rgba(186, 61, 32, 0.50);
     margin: 5px 0;
+
+    /* background-color: rgba(186, 61, 32, 0.50); */
 
     overflow: hidden;
 }
@@ -81,38 +96,45 @@ h2 {
     font-size: 25px;
     width: 50px;
     text-decoration: none;
-    color:white;
-  }
-  
-  .fa:hover {
+    color: white;
+}
+
+.fa:hover {
     opacity: 0.7;
-  }
+}
 
 /* Handler for when screen becomes wider than 850 --> Desktop/Large tablet size */
 @media screen and (min-width: 850px) {
     #header {
-        width:30%;
+        width: 30%;
         height: 100vh;
         float: left;
-        position:fixed;
+        position: fixed;
     }
 
     #main {
-        width:70%;
+        width: 70%;
         padding: 10px;
         position: relative;
         float: right;
         text-align: left;
     }
 
+    #profile {
+        width: 200px;
+        height: 200px;
+    }
+
     #quickLinks {
         display: block;
     }
-    .project-block{
-        display:inline-flex;
+
+    .project-block {
+        display: inline-flex;
     }
+
     .img-holder {
-         /* width: 30%; */
+        /* width: 30%; */
         /* float: left; */
         /* height: 100%;  */
 
