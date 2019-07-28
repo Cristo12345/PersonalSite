@@ -1,15 +1,24 @@
-body {
-    font-family: helvetica, sans-serif;
+p {
+    font-family:  'Roboto', helvetica, sans-serif;
 }
 
 h2 {
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: 'Muli', Tahoma, sans-serif;
     color: #ba3d20;
     border-bottom: 2px solid rgb(186, 61, 32, 0.35);
 
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
+
+h5, h3 {
+    font-family: 'Muli', Tahoma, sans-serif;
+}
+
+/* p {
+    color: #ba3d20;
+} */
 
 li {
     text-align: left;
@@ -57,6 +66,7 @@ li {
 #quickLinks {
     margin: 30px 0;
     display: none;
+    font-family: Muli, Tahoma, sans-serif;
 }
 
 .quickLink {
