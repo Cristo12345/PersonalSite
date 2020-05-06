@@ -142,6 +142,7 @@ li {
 
     .project-block {
         display: inline-flex;
+        padding-right: 15px;
     }
 
     .img-holder {
